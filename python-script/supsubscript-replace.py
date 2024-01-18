@@ -184,16 +184,18 @@ def convert(origin):
             indices.append([item,""])
         else:
             indices[-1][1]+=str(item)
-    
-    res=["",""] # up,down
-    for index in indices:
-        if index[0]=="^":
-            res[0]+=index[1]
-            res[1]+=r"\phantom{"+index[1]+"}"
-        else:
-            res[1]+=index[1]
-            res[0]+=r"\phantom{"+index[1]+"}"
-    return "^"+"{"+res[0]+"}"+"_"+"{"+res[1]+"}"
+    if len(indices)==1:
+        return "".join(indices[0])
+    else:
+        res=["",""] # up,down
+        for index in indices:
+            if index[0]=="^":
+                res[0]+=index[1]
+                res[1]+=r"\phantom{"+index[1]+"}"
+            else:
+                res[1]+=index[1]
+                res[0]+=r"\phantom{"+index[1]+"}"
+        return "^"+"{"+res[0]+"}"+"_"+"{"+res[1]+"}"
 
 def change(file,line_num):
     with open(file,"a+") as f:
