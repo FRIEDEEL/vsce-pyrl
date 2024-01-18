@@ -21,8 +21,24 @@
     ],
     "configuration":[
       {
-        "title": "",
-        "properties": {}
+        "title": "PyRL",
+        "properties": {
+          "pyrl.scriptPath":{
+            "type": "string",
+            "default": "/src/python-script/supsubscript-replace.py",
+            "description": "Specify the path to the python script. If none,given, use default file under extension file"
+          },
+          "pyrl.relativeToExtensionPath":{
+            "type": "string",
+            "default": true,
+            "description": "Specifies whether the script path is relative to extension path."
+          },
+          "pyrl.isGood":{
+            "type":"boolean",
+            "default":false,
+            "description": "fuckyou"
+          }
+        }
       }
     ]
   },
