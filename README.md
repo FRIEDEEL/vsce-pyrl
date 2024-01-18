@@ -8,7 +8,6 @@
 This extension serves ONE simple purpose: 
 to replace a line with with a python script.
 
-![feat_display](images/feat_show.gif)
 
 Because not all replacements can be done easiy with regular expressions.
 Sometimes you might need to write some single parser and design a syntax
