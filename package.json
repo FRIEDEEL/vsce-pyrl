@@ -16,6 +16,7 @@
     "commands": [
       {
         "command": "pyrl.replaceLine",
+        "category": "pyrl",
         "title": "Replace line with given python script.",
         "shortTitle": "Replace line"
       }
