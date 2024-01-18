@@ -29,7 +29,6 @@ export function activate(context: vscode.ExtensionContext) {
 	let replaceLine = vscode.commands.registerCommand('pyrl.replaceLine',
 		() => {
 			const editor = vscode.window.activeTextEditor;
-			vscode.window.showInformationMessage(String(relativeToExtension));
 
 			if (editor) {
 				// get selected line
@@ -55,14 +54,7 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		});
 
-	let testConfig = vscode.commands.registerCommand('pyrl.testConfig',
-		() => {
-			const config = vscode.workspace.getConfiguration();
-			let good = config.get<Boolean>("pyrl.scriptPath");
-			vscode.window.showErrorMessage(String(good));
-		});
 	context.subscriptions.push(replaceLine);
-	context.subscriptions.push(testConfig);
 }
 
 // This method is called when your extension is deactivated
