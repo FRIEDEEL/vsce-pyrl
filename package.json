@@ -33,11 +33,6 @@
             "type": "string",
             "default": true,
             "description": "Specifies whether the script path is relative to extension path."
-          },
-          "pyrl.isGood":{
-            "type":"boolean",
-            "default":false,
-            "description": "fuckyou"
           }
         }
       }
