@@ -3,6 +3,7 @@
   "displayName": "pyrl",
   "description": "Replace the current line by running python script.",
   "version": "0.0.1",
+  "publisher": "FRIEDEEL",
   "engines": {
     "vscode": "^1.85.0"
   },
