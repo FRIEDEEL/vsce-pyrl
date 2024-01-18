@@ -27,7 +27,7 @@
         "properties": {
           "pyrl.scriptPath":{
             "type": "string",
-            "default": "/src/python-script/supsubscript-replace.py",
+            "default": "/python-script/supsubscript-replace.py",
             "description": "Specify the path to the python script. If none,given, use default file under extension file"
           },
           "pyrl.relativeToExtensionPath":{
