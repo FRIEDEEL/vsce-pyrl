@@ -37,6 +37,14 @@
           }
         }
       }
+    ],
+    "keybindings":[
+      {
+        "command": "pyrl.replaceLine",
+        "key": "ctrl+k ctrl+p",
+        "mac": "cmd+k cmd+p",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
