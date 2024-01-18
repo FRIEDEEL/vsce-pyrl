@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const lineContent=currentLine.text;
 
 			// 调用 Python 脚本并传递当前行的内容
-			const pythonScriptPath = '/Users/liguang/测试code游乐场/240106/for_vscode_extension.py';
+			const pythonScriptPath = '/src/python-script/supsubscript-replace.py';
 			const pythonCommand = `python "${pythonScriptPath}" "${lineContent}"`;
 			cp.exec(pythonCommand, (error, stdout, stderr) => {
 				if (error) {
