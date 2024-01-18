@@ -14,8 +14,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "pyrl.helloWorld",
-        "title": "Hello World"
+        "command": "pyrl.replaceLine",
+        "title": "Replace line with given python script.",
+        "shortTitle": "Replace line"
+      }
+    ],
+    "configuration":[
+      {
+        "title": "",
+        "properties": {}
       }
     ]
   },
