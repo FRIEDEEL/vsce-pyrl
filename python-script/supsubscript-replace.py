@@ -2,8 +2,8 @@ import argparse
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("str",help="string to be converted",type=str)
-    line=parser.parse_args().str
+    parser.add_argument("content",help="string to be converted",type=str)
+    line=parser.parse_args().content
     print(replace_line(line))
 
 class BracketTree(object):
